@@ -17,7 +17,9 @@ Pycharm, Python, GTTS(Google-Text-To-Speech), Tesseract-OCR
 ### 프로젝트 주요기능
 
  -Image의 Text 추출
+ 
  -추출한 Text를 Speech로 변환 후 음성출력
+ 
  - 출력된 음성은 mp3파일형태로 저장(파일이름은 “년도날짜시간분.mp3”형식)
 
 ### 사용법 
