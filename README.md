@@ -5,9 +5,14 @@
 
 ### 사용된 OpenSource 및 개발환경
 
-Pycharm, Python, GTTS(Google-Text-To-Speech), Tesseract-OCR
+-  Pycharm 
+-  Python 
+-  GTTS(Google-Text-To-Speech) 
+-  Tesseract-OCR
+-  
 
  Tesseract: https://github.com/tesseract-ocr/tesseract
+ 
  GTTS:  https://github.com/pndurette/gTTS
 
 ### 시스템 구성
@@ -40,4 +45,7 @@ Pycharm, Python, GTTS(Google-Text-To-Speech), Tesseract-OCR
 ③ 시작음성 이후 “원하는 파일 이름을 입력하시오” 라고 콘솔창에 뜬다면 원하는 이미지 파일이름을 입력한다.
 
 ④ 이후 원하는 이미지 파일이 뜬 다음에, 이미지에서 Text 검출 후 음성이 출력된다.
+
+
+
 
