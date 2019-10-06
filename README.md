@@ -1,4 +1,4 @@
-# Softcon_Blind-Student-s-Helper(Softcon 시각장애인 학습도우미 ㅅ스템)
+# Softcon_Blind-Student-s-Helper(Softcon 시각장애인 학습도우미 시스템)
 공개SW 개발자 대회
 
 시각장애인들이 수업을 들을 때, 전공서적을 보는 것, 칠판과 빔 프로젝트의 내용을 보는 것에 대해서 제약을 받는다. 
@@ -8,3 +8,23 @@
 
 
 
+#사용된 OpenSource 및 개발환경
+
+Pycharm, Python, GTTS(Google-Text-To-Speech), Tesseract-OCR
+
+#시스템 구성
+
+#프로젝트 주요기능
+- Image의 Text 추출
+- 추출한 Text를 Speech로 변환 후 음성출력
+- 출력된 음성은 mp3파일형태로 저장(파일이름은 “년도날짜시간분.mp3”형식)
+
+#사용법
+① 프로젝트 열고 
+          pip install pillow 
+          pip install pytesseract 
+          pip install gtts
+          Terminal에 입력하여 필요한 인터프리터 설치.
+② 원하는 이미지Text를 프로젝트 파일안에 넣은 후, 1.py파일의 if__name==“__main__”: 안의 filename변수의 str을 변경.
+  ex. filename=“capture.jpg”에서 capture.jpg를 원하는 이미지파일이름으로 변경
+③ 1.py 파일을 실행
