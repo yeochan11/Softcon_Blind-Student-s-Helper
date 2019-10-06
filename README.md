@@ -20,16 +20,24 @@ Pycharm, Python, GTTS(Google-Text-To-Speech), Tesseract-OCR
  
  -추출한 Text를 Speech로 변환 후 음성출력
  
- - 출력된 음성은 mp3파일형태로 저장(파일이름은 “년도날짜시간분.mp3”형식)
+ -출력된 음성은 mp3파일형태로 저장(파일이름은 “년도날짜시간분.mp3”형식)
 
 ### 사용법 
 
 
 ① 프로젝트 열고 
+          
           pip install pillow 
+          
           pip install pytesseract 
+          
           pip install gtts
+          
           Terminal에 입력하여 필요한 인터프리터 설치.
+
 ② 1.py 파일을 실행
+
 ③ 시작음성 이후 “원하는 파일 이름을 입력하시오” 라고 콘솔창에 뜬다면 원하는 이미지 파일이름을 입력한다.
+
 ④ 이후 원하는 이미지 파일이 뜬 다음에, 이미지에서 Text 검출 후 음성이 출력된다.
+
