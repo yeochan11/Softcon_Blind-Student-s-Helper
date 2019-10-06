@@ -10,7 +10,9 @@
 -  Python 
 -  GTTS(Google-Text-To-Speech) 
 -  Tesseract-OCR
--  
+-  pygmame
+-  time
+-  datetime
 
  Tesseract: https://github.com/tesseract-ocr/tesseract
  
@@ -33,8 +35,11 @@
 
 ① 프로젝트 열고 
           
+          pip install pygame
+          
           pip install pillow 
           
+         
           pip install pytesseract 
           
           pip install gtts
