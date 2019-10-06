@@ -1,8 +1,4 @@
-import PIL
-import os
-import cv2 #pip install
 import pygame.mixer
-import wave
 import time
 from PIL import Image #pip install pillow
 from pytesseract import * #pip install pytesseract
@@ -18,7 +14,7 @@ def image_to_string(filename):
     print(text)
     return text
 
-#text를 wav파일로
+#text를 mp3파일로
 def text_to_mp3file(text,mp3filename):
     tts=gTTS(text=text,lang='ko')
 
@@ -26,16 +22,25 @@ def text_to_mp3file(text,mp3filename):
 
     tts.save(mp3filename)
 
-#audio 재생
-
 
 if __name__ == "__main__":
 
     #현재시간 나타내기
     now = datetime.now()
 
+    print("안녕하세요")
+    pygame.mixer.init()
+    pygame.mixer.music.load('helloEN.mp3')
+    pygame.mixer.music.play()
+    time.sleep(6)  # 숫자 조절하여 mp3file 재생시간 늘릴 수 있다.
+    pygame.mixer.music.stop()
+
+
     #추출 원하는 jpg파일
-    filename="capture.jpg"
+    print("원하는 파일 이름을 입력하시오")
+
+    filename=input()
+
     #향후 캡처기능 활성화시 filename 변경
     #filename=str(now.year) + str(now.month) + str(now.day) + str(now.hour) + str(now.minute) + ".jpg"
 
@@ -52,7 +57,3 @@ if __name__ == "__main__":
     pygame.mixer.music.play()
     time.sleep(100) #숫자 조절하여 mp3file 재생시간 늘릴 수 있다.
     pygame.mixer.music.stop()
-
-
-#여기서 만족하지 말고 더 좋은 방법 찾기
-#앞으로 할일: 카메라 사용하여 인식하기
