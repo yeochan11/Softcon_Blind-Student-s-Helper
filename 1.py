@@ -52,7 +52,6 @@ if __name__ == "__main__":
     text_to_mp3file(outtext,mp3filename)
 
     #음성재생
-    pygame.mixer.init()
     pygame.mixer.music.load(mp3filename)
     pygame.mixer.music.play()
     time.sleep(100) #숫자 조절하여 mp3file 재생시간 늘릴 수 있다.
