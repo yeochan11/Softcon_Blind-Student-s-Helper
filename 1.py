@@ -45,7 +45,7 @@ if __name__ == "__main__":
     #filename=str(now.year) + str(now.month) + str(now.day) + str(now.hour) + str(now.minute) + ".jpg"
 
     #mp3filename_현재날짜와시간가져와서파일이름으로만들기
-    mp3filename = str(now.year) + str(now.month) + str(now.day) + str(now.hour) + str(now.minute) + ".mp3"
+    mp3filename = now.strftime("%Y%m%d%H%M%S") + ".mp3"
 
 
     outtext = image_to_string(filename)
