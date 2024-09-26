@@ -8,11 +8,11 @@ from datetime import datetime
 
 def image_to_string(filename):
 
-    img = Image.open(filename)
-    img.show() #이미지 출력
-    text = pytesseract.image_to_string(img, lang='kor+eng')
-    print(text)
-    return text
+    with Image.open(filename) as img:
+        img.show() #이미지 출력
+        text = pytesseract.image_to_string(img, lang='kor+eng')
+        print(text)
+        return text
 
 #text를 mp3파일로
 def text_to_mp3file(text,mp3filename):
